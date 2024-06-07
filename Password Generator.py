@@ -6,10 +6,10 @@ def generate_password(length):
         print("Password length should be at least 4 characters for a strong password.")
         return None
     
-    # Define possible characters
+    #Define possible characters
     characters = string.ascii_letters + string.digits + string.punctuation
 
-    # Ensure the password contains at least one lowercase letter, one uppercase letter, one digit, and one special character
+    #Ensure the password contains at least one lowercase letter, one uppercase letter, one digit, and one special character
     password = [
         random.choice(string.ascii_lowercase),
         random.choice(string.ascii_uppercase),
@@ -17,7 +17,7 @@ def generate_password(length):
         random.choice(string.punctuation)
     ]
     
-    # Fill the rest of the password length with random characters
+    #Fill the rest of the password length with random characters
     password += random.choices(characters, k=length-4)
     
     # Shuffle the resulting password list to avoid predictable patterns
