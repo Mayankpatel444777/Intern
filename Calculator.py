@@ -1,4 +1,4 @@
-# Define functions for basic arithmetic operations
+#Define functions for basic arithmetic operations
 def add(x, y):
     return x + y
 
@@ -24,13 +24,13 @@ def display_menu():
 
 def main():
     while True:
-        # Display the menu
+        #Display the menu
         display_menu()
 
-        # Take input from the user
+        #Take input from the user
         choice = input("Enter choice (1/2/3/4): ")
 
-        # Check if choice is one of the valid options
+        #Check if choice is one of the valid options
         if choice in ['1', '2', '3', '4']:
             # Take input for numbers
             num1 = float(input("Enter first number: "))
